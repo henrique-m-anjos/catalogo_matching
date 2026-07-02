@@ -18,7 +18,7 @@ CHUNK_SIZE = 500
 root = Path(__file__).parent
 
 antigo = pd.read_csv(root / "data/catálogo_antigo.csv").fillna("")
-novo   = pd.read_csv(root / "data/catalogo_novo.csv").fillna("")
+novo   = pd.read_csv(root / "data/catálogo_novo.csv").fillna("")
 
 antigo["descrição_antiga"] = antigo["descrição_antiga"].str.lower().str.strip()
 novo["descrição_nova"]     = novo["descrição_nova"].str.lower().str.strip()
