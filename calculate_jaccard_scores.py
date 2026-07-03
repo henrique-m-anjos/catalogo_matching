@@ -82,6 +82,6 @@ for i in range(len(antigo)):
     })
 
 result = pd.DataFrame(rows)
-out_path = root / "outputs" / "jaccard_all_matches.csv"
-result.to_csv(out_path, index=False)
+out_path = root / "outputs" / "jaccard_all_matches.xlsx"
+result.to_excel(out_path, index=False)
 print(f"\nDone. {len(result)} rows saved to {out_path}")

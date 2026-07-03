@@ -58,6 +58,6 @@ for i, row in antigo.iterrows():
         print(f"  processed {i + 1}/{len(antigo)} rows...")
 
 result = pd.DataFrame(rows)
-out_path = root / "outputs" / "bm25_all_matches.csv"
-result.to_csv(out_path, index=False)
+out_path = root / "outputs" / "bm25_all_matches.xlsx"
+result.to_excel(out_path, index=False)
 print(f"\nDone. {len(result)} rows saved to {out_path}")
